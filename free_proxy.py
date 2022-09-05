@@ -102,6 +102,3 @@ class Proxy:
 		with open('all_proxies.txt', 'r') as f:
 			return f.read()
 
-p = Proxy(protocol='https', google=False)
-print(p.get_selected_proxies())
-
