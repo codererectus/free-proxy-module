@@ -82,9 +82,9 @@ class Proxy:
 					if attrs[key]+' ' in string and attrs[key] and len(attrs) != 0:
 						attr_cnt+=1
 						if attr_cnt == len(attrs):
-							proxies.append(string)
+							proxies.append(string.split()[0])
 				if len(attrs) == 0:
-					res.append(string)
+					proxies.append(string.split()[0])
 		return proxies
 
 	@classmethod
@@ -101,4 +101,7 @@ class Proxy:
 	def __get_proxies_from_file(cls) -> str:
 		with open('all_proxies.txt', 'r') as f:
 			return f.read()
+
+p = Proxy(protocol='https', google=False)
+print(p.get_selected_proxies())
 
