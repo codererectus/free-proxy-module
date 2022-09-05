@@ -101,3 +101,4 @@ class Proxy:
 	def __get_proxies_from_file(cls) -> str:
 		with open('all_proxies.txt', 'r') as f:
 			return f.read()
+
