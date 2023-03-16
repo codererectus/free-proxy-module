@@ -39,7 +39,7 @@ region - 'CA', 'US', 'AU', 'RU', ... , None
 
 Clone the repository:
 
-```git clone https://github.com/jsonstackhum/free-proxy-module.git```
+```git clone https://github.com/codererectus/free-proxy-module.git```
 
 I recommend creating a virtual environment:
 
